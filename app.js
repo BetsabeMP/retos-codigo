@@ -51,4 +51,32 @@ Dado un array de números, devuelve un array que contiene sólo los números imp
   });
   console.log (numbers);
 
+/* 16. convertScoreToGrade
+  Dada una puntuación, convertScoreToGrade devuelve el grado de letra correspondiente a la puntuación.
+  (100 - 90) -> 'A'
+  (89 - 80) ->' B '
+  (79 - 70) -> 'C'
+  (69 - 60) -> 'D'
+  (59 - 0) -> 'F'
+  Si la puntuación dada es mayor que 100 o menor que 0, debe devolver 'PUNTUACION INVALIDA'.*/
+
+  let nota = 91;
+  let notaLetra = "";
+
+  if (nota >=101) {
+    notaLetra = "PUNTUACIÓN INVALIDA";
+  } else if (nota >= 90) {
+      notaLetra = "A";
+  } else if ( nota >= 80) {
+      notaLetra = "B";
+  } else if ( nota >= 70) {
+      notaLetra = "C";
+  } else if ( nota >= 60) {
+      notaLetra = "D";
+  } else {
+      notaLetra = "F";
+  }
+
+console.log(notaLetra);
+
 
