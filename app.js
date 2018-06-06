@@ -9,20 +9,22 @@ const computeAverageLengthOfWords = (word1, word2) => {
 
 /* 2. getNthElement
 Dado un arreglo y un entero, getNthElement devuelve el valor según el entero dado, dentro del arreglo.
-Si el arreglo tiene una longitud de 0, debería devolver' undefined'.
-
-var output = getNthElement([1, 3, 5], 1);
-console.log(output); // --> 3*/
+Si el arreglo tiene una longitud de 0, debería devolver' undefined'.*/
 
 const getNthElement = (array, numberN) => {
     const arrEn = array[numberN];
-    if (array.length < 0) {
-        const error = undefined;
-        return error
-    }
     return arrEn
   };
   console.log(getNthElement([1, 3, 5], 1));
+
+/* 3. convertDoubleSpaceToSingle
+Dada una cadena, convertDoubleSpaceToSingle devuelve la cadena pasada en cadena con todos los espacios dobles convertidos a espacios simples.*/
+
+function convertDoubleSpaceToSingle(word) {
+  const newSentence = word.split('  ').join(' ');
+  return newSentence
+}
+console.log(convertDoubleSpaceToSingle("string  with  double  spaces"));
 
 
 /* 4. areValidCredentials
@@ -41,8 +43,7 @@ const areValidCredentials = (name, password) => {
   console.log(areValidCredentials('Ritu', 'mylongpassword'));
 
 /*6. filterOddElements
-Dado un array de números, devuelve un array que contiene sólo los números impares del array dado.
--->[1, 3, 5]*/
+Dado un array de números, devuelve un array que contiene sólo los números impares del array dado.*/
 
   const filterOddElements = [1, 2, 3, 4, 5];
   const numbers = filterOddElements.filter((element) => {
