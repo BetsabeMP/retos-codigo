@@ -51,6 +51,16 @@ Dado un array de números, devuelve un array que contiene sólo los números imp
   });
   console.log (numbers);
 
+/* 11. computeSumOfAllElements
+Dado un array de números, computeSumOfAllElements devuelve la suma de todos los elementos del array dado.*/
+
+  const computeSumOfAllElements = (num1, num2, num3) => {
+    const additionNum = (num1 + num2 + num3);
+    return additionNum;
+  };
+  console.log (computeSumOfAllElements(1, 2, 3));
+
+
 /* 15. calculateBillTotal
   Dado el pre impuesto y la cantidad antes de propina de una comida, calculateBillTotal devuelve 
   la cantidad total debida después de impuestos y propina.
