@@ -38,7 +38,6 @@ const areValidCredentials = (name, password) => {
       return inferior
     }
   };
-  
   console.log(areValidCredentials('Ritu', 'mylongpassword'));
 
 /*6. filterOddElements
@@ -50,6 +49,25 @@ Dado un array de números, devuelve un array que contiene sólo los números imp
    return element % 2 === 1;
   });
   console.log (numbers);
+
+/* 15. calculateBillTotal
+  Dado el pre impuesto y la cantidad antes de propina de una comida, calculateBillTotal devuelve 
+  la cantidad total debida después de impuestos y propina.
+
+  Suponga que el impuesto de ventas es 9.5% y la propina es 15%.
+  NO incline el impuesto sobre las ventas, solo sobre la cantidad de propina.
+  var output = calculateBillTotal(20);
+  console.log(output); // -> 24,9*/
+
+
+  const calculateBillTotal = (impuesto, propina) => {
+    let venta = 20;
+    const multiply = venta +(venta*(impuesto*propina));
+    return multiply;
+  };
+  console.log(calculateBillTotal(0.95, 0.15));
+
+
 
 /* 16. convertScoreToGrade
   Dada una puntuación, convertScoreToGrade devuelve el grado de letra correspondiente a la puntuación.
@@ -76,7 +94,6 @@ Dado un array de números, devuelve un array que contiene sólo los números imp
   } else {
       notaLetra = "F";
   }
-
-console.log(notaLetra);
+  console.log(notaLetra);
 
 
